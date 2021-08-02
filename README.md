@@ -23,17 +23,17 @@ $ git clone https://github.com/kychongdev/datasets
 ```
 Copy the datasets.yaml inside datasets/yolov5 into yolov5 repo
 
-Your file structure should look like this
-├── datasets
-│   ├──1080x960
-│   ├──Original
-│   └──yolov5
-│       ├──images
-│       ├──labels
-│       └──datasets.yaml (Copy this to yolov5)
-└── yolov5
-    ├── datasets.yaml (Copy from above)
-    └── all other files
+Your file structure should look like this <br />
+├── datasets <br />
+│   ├──1080x960 <br />
+│   ├──Original <br />
+│   └──yolov5 <br />
+│       ├──images <br />
+│       ├──labels <br />
+│       └──datasets.yaml (Copy this to yolov5) <br />
+└── yolov5 <br />
+    ├── datasets.yaml (Copy from above) <br />
+    └── all other files <br />
 
 
 cd into yolov5 repo and run this command to train
