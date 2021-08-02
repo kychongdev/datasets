@@ -24,7 +24,8 @@ $ git clone https://github.com/kychongdev/datasets
 Copy the datasets.yaml inside datasets/yolov5 into yolov5 repo
 
 Your file structure should look like this
-├── datasets
+```
+├── datasets 
 │   ├──1080x960
 │   ├──Original
 │   └──yolov5
@@ -34,21 +35,22 @@ Your file structure should look like this
 └── yolov5
     ├── datasets.yaml (Copy from above)
     └── all other files
-
-
-cd into yolov5 repo and run this command to train
-By far, this is the best to train for my spec. You can adjust if your pc can sustain.
-
-Increase the img size is going to make training time increase A LOT.
-You can adjust batch higher in multiple of 2 [16,32,64,128].
-Higher epochs might give you better results but do not guarantee.
-You can choose the pre-trained weights, check out their documentation for other weights. 
-Check out the best tips if you want to adjust more.
-
+```
+Cd into yolov5 repo and run this command to train <br/>
 ```bash
 $ cd yolov5
 $ python train.py --img 640 --batch 16 --epochs 300 --data datasets.yaml --weights yolov5s.pt
 ```
+
+By far, this is the best to train for my spec. You can adjust if your pc can sustain.
+
+- Increase the img size is going to make training time increase A LOT.
+- You can adjust batch higher in multiple of 2 [16,32,64,128].
+- Higher epochs might give you better results but do not guarantee.
+- You can choose the pre-trained weights, check out their documentation for other weights. 
+- Check out the best tips if you want to adjust more.
+
+
 
 ## My learning experience:
 - You do not have to adjust the image. The library itself will do it for you. You can specify the size and it will transform for you. In this case, its 640. 
