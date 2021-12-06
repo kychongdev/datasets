@@ -42,6 +42,11 @@ $ cd yolov5
 $ python train.py --img 640 --batch 16 --epochs 300 --data datasets.yaml --weights yolov5s.pt
 ```
 
+Run this command to detect if the model is success
+```bash
+$ python detect.py --source video.mp4 weights runs/train/exp/weights/best.pt
+```
+
 By far, this is the best to train for my spec. You can adjust if your pc can sustain.
 
 - Increase the img size is going to make training time increase A LOT.
